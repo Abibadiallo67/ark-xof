@@ -1,0 +1,6 @@
+// package.json
+"scripts": {
+  "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/presentation/index.ts",
+  "build": "tsc",
+  "start": "node dist/presentation/index.js"
+}
