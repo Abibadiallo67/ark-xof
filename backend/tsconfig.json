@@ -1,0 +1,18 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ES2020", // Cible une version moderne de JavaScript
+    "module": "CommonJS", // Format des modules
+    "outDir": "./dist",   // Dossier de sortie pour le code compilé
+    "rootDir": "./src",   // Dossier source
+    "strict": true,       // Active toutes les options de vérification strictes
+    "esModuleInterop": true, // Permet une meilleure interopérabilité entre modules CommonJS et ES
+    "skipLibCheck": true, // Ignore la vérification des types des fichiers de déclaration (.d.ts)
+    "forceConsistentCasingInFileNames": true, // Assure la cohérence des noms de fichiers
+    "resolveJsonModule": true, // Permet d'importer des fichiers JSON
+    "experimentalDecorators": true, // Nécessaire pour TypeORM si tu l'utilises
+    "emitDecoratorMetadata": true // Idem
+  },
+  "include": ["src/**/*.ts"], // Quels fichiers inclure dans la compilation
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"] // Quels fichiers exclure
+}
